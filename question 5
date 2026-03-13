@@ -4,7 +4,7 @@ class Mull{
         int b=Integer.parseInt (args[1]);
          int c=Integer.parseInt (args[2]);
 
-         int product=(a*b*c) ;
+         int product=(a*b*c);
          System.out.println(product);
     }
 }
