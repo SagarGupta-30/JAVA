@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class URLShortener {
+    static HashMap<String, String> map = new HashMap<>();
+    static int count = 1;
+
+    static String shorten(String url) {
+        String key = "u" + count++;
+        map.put(key, url);
+        return key;
+    }
+
+    static String getOriginal(String key) {
+        return map.get(key);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String shortUrl = shorten("https://google.com");
+        System.out.println("Short: " + shortUrl);
+        System.out.println("Original: " + getOriginal(shortUrl));
+    }
+}
