@@ -1,0 +1,23 @@
+import java.io.*;
+
+public class FileOrganizer {
+    public static void main(String[] args) {
+        File folder = new File("test"); // create test folder
+        File[] files = folder.listFiles();
+
+        for (File f : files) {
+            if (f.getName().endsWith(".jpg")) {
+                move(f, "Images");
+            } else if (f.getName().endsWith(".txt")) {
+                move(f, "Docs");
+            }
+        }
+    }
+
+    static void move(File file, String folderName) {
+        File dir = new File(folderName);
+        if (!dir.exists()) dir.mkdir();
+
+        file.renameTo(new File(dir + "/" + file.getName()));
+    }
+}
