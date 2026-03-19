@@ -4,5 +4,6 @@ class sum{
         double b= Double.parseDouble(args[2]);
         System.out.println(a+b);
 
+
     }
 }
