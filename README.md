@@ -4,7 +4,7 @@ This repository contains Java programs that I created while learning and practic
 
 The goal of this repository is to improve my understanding of **Core Java concepts, Object-Oriented Programming, and problem solving**.
 
-## Contents
+### ..Contents
 
 This repository includes programs related to:
 
