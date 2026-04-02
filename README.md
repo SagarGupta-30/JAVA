@@ -1,4 +1,4 @@
-# Java Programs Repository
+## Java Programs Repository
 
 This repository contains Java programs that I created while learning and practicing Java programming.
 
